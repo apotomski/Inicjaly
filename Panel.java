@@ -1,10 +1,9 @@
 package test;
 import javax.swing.*;
 import java.awt.*;
-import java.util.ArrayList;
+
 public class Panel extends JPanel{
-    ArrayList<Point[]> krzywe = new ArrayList<>();
-    Point[] points = new Point[4];
+
     Point[] q = new Point[4];
     double k = 0.025,t;
 
@@ -12,16 +11,8 @@ public class Panel extends JPanel{
         setFocusable(true);
         setFocusTraversalKeysEnabled(false);
 
-        points[0] = new Point(100,100);
-        points[1] = new Point(150,200);
-        points[2] = new Point(200,200);
-        points[3] = new Point(250,100);
-        krzywe.add(points);
-
-
     }
     public void paint(Graphics g) {
-        setBackground(Color.lightGray);
 
         //Litera A
         q[0] = new Point(50,400);
@@ -100,7 +91,7 @@ public class Panel extends JPanel{
         q[2] = new Point(380,210);
         q[3] = new Point(389,250);
         rysuj_krzywa(g,q);
-        
+
 
 
     }
