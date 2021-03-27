@@ -103,21 +103,6 @@ public class Panel extends JPanel{
         
 
 
-
-
-        /*for(int k = 0;k < krzywe.size(); k++)
-        {
-            Point[] q = krzywe.get(k);
-            for(int i = 0; i < 4; i++)
-            {
-                g.setColor(Color.red);
-                g.fillOval(q[i].x-2, q[i].y-2,4,4);
-                g.setColor(Color.red);
-            }
-            licz(g,q);
-        }*/
-
-
     }
     public void rysuj_krzywa(Graphics g,Point[] punkty)
     {
